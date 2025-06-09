@@ -1,4 +1,3 @@
-
 import { Zap, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <Zap className="h-6 w-6 text-primary" />
               <span className="text-lg font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-                NeuralAI
+                Syraa
               </span>
             </div>
             <p className="text-muted-foreground">
@@ -58,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary/20 mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 NeuralAI. All rights reserved. Built with cutting-edge AI technology.</p>
+          <p>&copy; 2024 Syraa. All rights reserved. Built with cutting-edge AI technology.</p>
         </div>
       </div>
     </footer>

@@ -1,48 +1,24 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { 
-  Brain, 
   Zap, 
-  Shield, 
   BarChart3, 
-  Cpu, 
   Sparkles,
   Clock,
-  Target,
   Globe
 } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: Brain,
-      title: "Advanced Machine Learning",
-      description: "State-of-the-art neural networks that learn and adapt to your specific business needs."
-    },
-    {
       icon: Zap,
       title: "Lightning Fast Processing",
       description: "Process massive datasets in seconds with our optimized AI infrastructure."
     },
     {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "Bank-level encryption and security protocols to protect your sensitive data."
-    },
-    {
       icon: BarChart3,
       title: "Real-time Analytics",
       description: "Get instant insights and actionable intelligence from your data streams."
-    },
-    {
-      icon: Cpu,
-      title: "Scalable Architecture",
-      description: "Seamlessly scale from startup to enterprise with our cloud-native platform."
-    },
-    {
-      icon: Target,
-      title: "Precision Accuracy",
-      description: "Industry-leading accuracy rates that you can rely on for critical decisions."
     },
     {
       icon: Clock,
