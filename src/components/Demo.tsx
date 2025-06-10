@@ -2,7 +2,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Send, Sparkles, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
@@ -12,8 +11,7 @@ const Demo = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
-    message: ''
+    company: ''
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,11 +22,11 @@ const Demo = () => {
     setTimeout(() => {
       setIsLoading(false);
       toast.success("Demo request submitted! We'll be in touch within 24 hours.");
-      setFormData({ name: '', email: '', company: '', message: '' });
+      setFormData({ name: '', email: '', company: '' });
     }, 2000);
   };
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -63,7 +61,7 @@ const Demo = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Personalized Consultation</h3>
                   <p className="text-muted-foreground">
-                    Our AI experts will understand your specific needs and demonstrate relevant solutions.
+                    Syraa understand specific needs of the clinic and talk relevant solutions.
                   </p>
                 </div>
               </div>
@@ -83,7 +81,7 @@ const Demo = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Custom Integration Plan</h3>
                   <p className="text-muted-foreground">
-                    Receive a tailored roadmap for implementing AI in your organization.
+                    Receive a tailored roadmap for implementing AI in your clinic.
                   </p>
                 </div>
               </div>
@@ -128,7 +126,7 @@ const Demo = () => {
                   
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium mb-2">
-                      Company Name
+                      Clinic Name
                     </label>
                     <Input
                       id="company"
@@ -137,22 +135,7 @@ const Demo = () => {
                       value={formData.company}
                       onChange={handleInputChange}
                       className="bg-background/50 border-primary/20 focus:border-primary"
-                      placeholder="Your Company"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium mb-2">
-                      Tell us about your use case
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="bg-background/50 border-primary/20 focus:border-primary resize-none"
-                      placeholder="Describe how you'd like to use AI in your business..."
+                      placeholder="Your Clinic"
                     />
                   </div>
                   
