@@ -1,4 +1,5 @@
 
+
 import { Zap, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
@@ -31,7 +32,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>San Francisco, CA</span>
+                <span>Bangalore, IN</span>
               </li>
             </ul>
           </div>
@@ -46,3 +47,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
