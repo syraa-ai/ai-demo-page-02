@@ -17,18 +17,6 @@ const Header = () => {
           </span>
         </div>
         
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
-            Features
-          </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-            About
-          </a>
-          <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-            Contact
-          </a>
-        </nav>
-        
         <Button onClick={scrollToDemo} className="bg-primary hover:bg-primary/90 text-primary-foreground">
           Try Demo
         </Button>
