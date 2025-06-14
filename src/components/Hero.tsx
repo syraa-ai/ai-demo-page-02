@@ -43,20 +43,11 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              onClick={scrollToDemo}
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold group"
-            >
-              Experience Our Demo
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            
-            <Button 
               variant="outline" 
               size="lg" 
               className="border-primary/20 hover:bg-primary/10 px-8 py-6 text-lg"
             >
-              Demo Number
+              080-35738480
             </Button>
           </div>
           
