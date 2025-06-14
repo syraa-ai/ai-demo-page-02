@@ -42,16 +42,20 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <div className="px-8 py-6 text-lg font-semibold text-primary">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary/20 hover:bg-primary/10 px-8 py-6 text-lg font-semibold"
+            >
               Experience Our Demo
-            </div>
+            </Button>
             
             <Button 
               variant="outline" 
               size="lg" 
               className="border-primary/20 hover:bg-primary/10 px-8 py-6 text-lg"
             >
-              080-35738480
+              080-3573-8480
             </Button>
           </div>
           
