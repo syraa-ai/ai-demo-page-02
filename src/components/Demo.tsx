@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -93,22 +92,21 @@ const Demo = () => {
                         value={formData.mobile}
                         onChange={handleInputChange}
                         className="bg-background/50 border-primary/20 focus:border-primary"
-                        placeholder="+91-9876543210"
                       />
                     </div>
                     
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium mb-2">
-                        Clinic Name
+                        Clinic Name *
                       </label>
                       <Input
                         id="company"
                         name="company"
                         type="text"
+                        required
                         value={formData.company}
                         onChange={handleInputChange}
                         className="bg-background/50 border-primary/20 focus:border-primary"
-                        placeholder="Your Clinic"
                       />
                     </div>
                   </div>
