@@ -42,6 +42,10 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="px-8 py-6 text-lg font-semibold text-primary">
+              Experience Our Demo
+            </div>
+            
             <Button 
               variant="outline" 
               size="lg" 
