@@ -1,6 +1,5 @@
 
-
-import { Zap, Mail, Phone, MapPin } from "lucide-react";
+import { Zap, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,10 +26,6 @@ const Footer = () => {
                 <span>Shubham@syraa.live</span>
               </li>
               <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+91-9810800850</span>
-              </li>
-              <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
                 <span>Bangalore, IN</span>
               </li>
@@ -47,4 +42,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

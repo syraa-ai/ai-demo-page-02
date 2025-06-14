@@ -7,23 +7,13 @@ import { Send, Sparkles, CheckCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const Demo = () => {
-  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    mobile: '',
     company: ''
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsLoading(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsLoading(false);
-      toast.success("Demo request submitted! We'll be in touch within 24 hours.");
-      setFormData({ name: '', email: '', company: '' });
-    }, 2000);
+  const handleConnectWithFounder = () => {
+    window.open('https://cal.com/shubhamarora/30min', '_blank');
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -89,75 +79,50 @@ const Demo = () => {
 
             <Card className="glass-effect border-primary/20">
               <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium mb-2">
-                        Full Name *
+                      <label htmlFor="mobile" className="block text-sm font-medium mb-2">
+                        Mobile Number *
                       </label>
                       <Input
-                        id="name"
-                        name="name"
-                        type="text"
+                        id="mobile"
+                        name="mobile"
+                        type="tel"
                         required
-                        value={formData.name}
+                        value={formData.mobile}
                         onChange={handleInputChange}
                         className="bg-background/50 border-primary/20 focus:border-primary"
-                        placeholder="John Doe"
+                        placeholder="+91-9876543210"
                       />
                     </div>
                     
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium mb-2">
-                        Email Address *
+                      <label htmlFor="company" className="block text-sm font-medium mb-2">
+                        Clinic Name
                       </label>
                       <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
+                        id="company"
+                        name="company"
+                        type="text"
+                        value={formData.company}
                         onChange={handleInputChange}
                         className="bg-background/50 border-primary/20 focus:border-primary"
-                        placeholder="john@company.com"
+                        placeholder="Your Clinic"
                       />
                     </div>
                   </div>
                   
-                  <div>
-                    <label htmlFor="company" className="block text-sm font-medium mb-2">
-                      Clinic Name
-                    </label>
-                    <Input
-                      id="company"
-                      name="company"
-                      type="text"
-                      value={formData.company}
-                      onChange={handleInputChange}
-                      className="bg-background/50 border-primary/20 focus:border-primary"
-                      placeholder="Your Clinic"
-                    />
-                  </div>
-                  
                   <Button
-                    type="submit"
+                    type="button"
                     size="lg"
-                    disabled={isLoading}
+                    onClick={handleConnectWithFounder}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold group"
                   >
-                    {isLoading ? (
-                      <>
-                        <div className="animate-spin h-4 w-4 border-2 border-primary-foreground border-t-transparent rounded-full mr-2" />
-                        Processing Request...
-                      </>
-                    ) : (
-                      <>
-                        Book Your Demo
-                        <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </>
-                    )}
+                    Connect with Founder
+                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </form>
+                </div>
               </CardContent>
             </Card>
           </div>
