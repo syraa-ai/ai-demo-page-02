@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -50,7 +51,7 @@ const Demo = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Personalized Consultation</h3>
                   <p className="text-muted-foreground">
-                    Syraa understand specific needs of the clinic and talk relevant solutions.
+                    Syraa understand specific needs of the workspace and talk relevant solutions.
                   </p>
                 </div>
               </div>
@@ -70,7 +71,7 @@ const Demo = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Custom Integration Plan</h3>
                   <p className="text-muted-foreground">
-                    Receive a tailored roadmap for implementing AI in your clinic.
+                    Receive a tailored roadmap for implementing AI in your workspace.
                   </p>
                 </div>
               </div>
@@ -97,7 +98,7 @@ const Demo = () => {
                     
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium mb-2">
-                        Clinic Name *
+                        Company Name *
                       </label>
                       <Input
                         id="company"
