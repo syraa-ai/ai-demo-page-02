@@ -24,7 +24,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>Shubham@syraa.live</span>
+                <span>shubham@syraa.live</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <Link 
-                  to="/privacy-policy" 
+                  to="https://syraa.live/PrivacyPolicy.html" 
                   className="hover:text-primary transition-colors"
                 >
                   Privacy Policy
@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  to="/terms-and-conditions" 
+                  to="https://syraa.live/TermsAndConditions.html" 
                   className="hover:text-primary transition-colors"
                 >
                   Terms & Conditions
