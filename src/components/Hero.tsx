@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Transform Your Clinic with{" "}
+            Transform Your Workspace with{" "}
             <span className="bg-gradient-to-r from-primary via-blue-400 to-purple-400 bg-clip-text text-transparent">
               Intelligent AI
             </span>
@@ -38,7 +38,7 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Harness the power of cutting-edge artificial intelligence to automate processes, 
-            gain insights, and drive innovation across your clinic.
+            gain insights, and drive innovation across your workspace.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
