@@ -1,11 +1,12 @@
 
 import { Zap, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="border-t border-primary/20 py-12">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Zap className="h-6 w-6 text-primary" />
@@ -28,6 +29,28 @@ const Footer = () => {
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
                 <span>Bangalore, IN</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2 text-muted-foreground">
+              <li>
+                <Link 
+                  to="/privacy-policy" 
+                  className="hover:text-primary transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/terms-and-conditions" 
+                  className="hover:text-primary transition-colors"
+                >
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>
