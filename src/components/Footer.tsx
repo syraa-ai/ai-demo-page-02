@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <Link 
-                  to="https://syraa.live/PrivacyPolicy.html" 
+                  to="https://syraa.live/privacy-policy" 
                   className="hover:text-primary transition-colors"
                 >
                   Privacy Policy
@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
-                  to="https://syraa.live/TermsAndConditions.html" 
+                  to="https://syraa.live/terms-and-conditions" 
                   className="hover:text-primary transition-colors"
                 >
                   Terms & Conditions
