@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-primary/20 mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Syraa. All rights reserved. Built with cutting-edge AI technology.</p>
+          <p>&copy; 2025 Syraa (brand name of Slamdunk Services Pvt Ltd). All rights reserved. </p>
         </div>
       </div>
     </footer>
