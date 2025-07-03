@@ -51,10 +51,10 @@ const Footer = () => {
                       <h4 className="font-semibold text-foreground mb-2">Our Office</h4>
                       <p className="text-sm font-medium text-foreground mb-1">SLAMDUNK SERVICES PVT LTD</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Y 74 Y block,<br/>
-                        Hauz Khas,<br/>
-                        New Delhi 110016<br/>
-                        India
+                        Y 74 Y block,
+                        Hauz Khas,<br />
+                        New Delhi,
+                        India - 110016.
                       </p>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-border/40 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              &copy; 2025 Syraa (brand name of Slamdunk Services Pvt Ltd). All rights reserved.
+              &copy; 2025 Syraa (Brand name of Slamdunk Services Pvt Ltd). All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link 
