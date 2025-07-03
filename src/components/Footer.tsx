@@ -51,9 +51,10 @@ const Footer = () => {
                       <h4 className="font-semibold text-foreground mb-2">Our Office</h4>
                       <p className="text-sm font-medium text-foreground mb-1">SLAMDUNK SERVICES PVT LTD</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Flat no 15 3rd Floor, Block A7 Pkt-8 Sec-23(B),<br/>
-                        Raj Nagar - II, New Delhi,<br/>
-                        South West Delhi - 110077
+                        Y 74 Y block,<br/>
+                        Hauz Khas,<br/>
+                        New Delhi 110016<br/>
+                        India
                       </p>
                     </div>
                   </div>
