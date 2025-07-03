@@ -1,5 +1,5 @@
 
-import { Zap, Mail, MapPin } from "lucide-react";
+import { Zap, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -50,7 +50,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span>Bangalore, IN</span>
+                <span>New Delhi, India</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Phone className="h-4 w-4" />
+                <span>+919711712737</span>
               </li>
             </ul>
           </div>
