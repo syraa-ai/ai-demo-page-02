@@ -41,22 +41,44 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          <div className="md:col-span-2">
             <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
-                <span>shubham@syraa.live</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4" />
-                <span>New Delhi, India</span>
-              </li>
-              <li className="flex items-center space-x-2">
-                <Phone className="h-4 w-4" />
-                <span>+919711712737</span>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Address Card */}
+              <div className="bg-card border border-border rounded-lg p-4 space-y-3">
+                <div className="flex justify-center">
+                  <div className="w-12 h-12 rounded-full border-2 border-dashed border-green-500 flex items-center justify-center">
+                    <MapPin className="h-5 w-5 text-green-500" />
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-semibold text-sm mb-2">SLAMDUNK SERVICES PVT LTD</h4>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Flat no 15 3rd Floor, Block A7 Pkt-8 Sec-23(B),<br/>
+                    Raj Nagar - II, New Delhi, South West Delhi- 110077
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact Details Card */}
+              <div className="bg-card border border-border rounded-lg p-4 space-y-3">
+                <div className="flex justify-center">
+                  <div className="w-12 h-12 rounded-full border-2 border-dashed border-blue-500 flex items-center justify-center">
+                    <Mail className="h-5 w-5 text-blue-500" />
+                  </div>
+                </div>
+                <div className="text-center space-y-2">
+                  <div>
+                    <p className="text-xs text-muted-foreground">Email:-</p>
+                    <p className="text-sm font-medium">shubham@syraa.live</p>
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Contact No:-</p>
+                    <p className="text-sm font-medium">+919711712737</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div>
