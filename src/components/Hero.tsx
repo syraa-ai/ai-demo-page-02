@@ -46,8 +46,11 @@ const Hero = () => {
               variant="outline" 
               size="lg" 
               className="border-primary/20 hover:bg-primary/10 px-8 py-6 text-lg font-semibold"
-            >
-              Experience Our Demo
+            ><a 
+                href="https://cal.com/shubham/30mins" 
+                >
+                Experience Our Demo
+              </a>
             </Button>
             
             <Button 
@@ -55,7 +58,11 @@ const Hero = () => {
               size="lg" 
               className="border-primary/20 hover:bg-primary/10 px-8 py-6 text-lg"
             >
-              080-3573-8480
+              <a 
+                href="tel:+912269539733" 
+                >
+                +912269539733
+              </a>
             </Button>
           </div>
           

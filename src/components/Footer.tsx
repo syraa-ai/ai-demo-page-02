@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <Zap className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-400 bg-clip-text text-transparent">
-                Syraa
+                Syra
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
@@ -72,10 +72,10 @@ const Footer = () => {
                       <div>
                         <p className="text-sm text-muted-foreground">Email</p>
                         <a 
-                          href="mailto:shubham@syraa.live" 
+                          href="mailto:shubham@Syra.live" 
                           className="font-medium text-foreground hover:text-primary transition-colors"
                         >
-                          shubham@syraa.live
+                          shubham@meetsyra.com
                         </a>
                       </div>
                     </div>
@@ -105,7 +105,7 @@ const Footer = () => {
         <div className="border-t border-border/40 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              &copy; 2025 Syraa (Brand name of Slamdunk Services Pvt Ltd). All rights reserved.
+              &copy; 2025 Syra (Brand name of Slamdunk Services Pvt Ltd). All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link 

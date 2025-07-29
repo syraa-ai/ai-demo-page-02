@@ -51,7 +51,7 @@ const Demo = () => {
                 <div>
                   <h3 className="font-semibold mb-2">Personalized Consultation</h3>
                   <p className="text-muted-foreground">
-                    Syraa understand specific needs of the workspace and talk relevant solutions.
+                    Syra understand specific needs of the workspace and talk relevant solutions.
                   </p>
                 </div>
               </div>
